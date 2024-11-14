@@ -79,7 +79,7 @@ module "malt" {
     functions = {
         "${local.env_ms_name}ExampleAction" = {
             runtime = "provided.al2"
-            handler = "Handlers/example-action-handler.jar"
+            handler = "Handlers/example-action-handler.something"
             role = "arn:aws:iam::${var.AWS_ACCOUNT_ID}:role/myRoleToApplyToLambdas"
             timeout = 28
             layers = [
